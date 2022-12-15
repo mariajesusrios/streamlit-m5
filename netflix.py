@@ -26,9 +26,6 @@ def filter_data_by_director(director):
     filtered_data_director = data[data['director'] == director]
     return filtered_data_director
 
-
-
-
 data_load_state = st.text('Loading cicle nyc data...')
 data = load_data(1000)
 data_load_state.text("Done! (using st.cache)")
